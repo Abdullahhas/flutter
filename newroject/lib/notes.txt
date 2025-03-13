@@ -1,0 +1,22 @@
+//Types of widgets
+// 1. Stateless Widgets -> means data is imutable and cannot be changed once it is set in the UI (User Interface) 
+// 2. Stateful Widgets -> means data is mutable and can be changed once it is set in the UI (User Interface)
+
+//Designing the app
+// 1. Material Design -> Google's design language
+// 2. Cupertino Design -> Apple's design language
+
+
+
+
+//statesless widget divided into smaller pieces of widgets so people can understand the code easily and can be reused 
+
+
+//build method is used to build the widget and context is used to get the information about the widget
+
+
+// we can navigate to different screens using material app and much more things which text or any othe widget cant do thats why we use here material widget
+
+//home is the main screen of the app
+
+//scaffold is a widget which is used to design the app , it is related to one page which gives us header , body and footer
