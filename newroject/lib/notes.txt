@@ -13,7 +13,7 @@
 
 
 //build method is used to build the widget and context is used to get the information about the widget
-
+//build context tells us the location of some widget
 
 // we can navigate to different screens using material app and much more things which text or any othe widget cant do thats why we use here material widget
 

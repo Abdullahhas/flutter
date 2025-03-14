@@ -9,10 +9,33 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-       body:  Center(
-        child: Text("Hello!!!"),
-        )
-        )
+        backgroundColor: Colors.blueGrey,
+       body: Center(
+         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('0' , style: TextStyle(
+              fontSize: 45,
+              fontWeight: FontWeight.bold
+            ),
+            ),
+            TextField(
+              
+              style: TextStyle(
+
+                color: Colors.white
+              ),
+              decoration: InputDecoration(
+               hintText: "Plz enter the amount in USD",
+               hintStyle: TextStyle(
+                color: Colors.white60,
+               )
+              ),
+            ),
+          ],
+         ),
+       ) 
+        ),
         );
   }
 }
