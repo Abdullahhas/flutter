@@ -19,11 +19,28 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
               ),
               TextField(
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
                 decoration: InputDecoration(
                   hintText: "Plz enter the amount in USD",
-                  hintStyle: TextStyle(color: Colors.white60),
+                  hintStyle: TextStyle(
+                    color: Colors.black
+                    ),
+                    prefixIcon: Icon(Icons.monetization_on_outlined),
+                    prefixIconColor: Colors.black,
+                    filled: true,
+                    fillColor: Colors.white,
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                       
+                        width: 2.0,
+                        style: BorderStyle.solid,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(70.0)
+                        ),
+                    ),
                 ),
+
               ),
             ],
           ),
