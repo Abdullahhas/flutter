@@ -20,3 +20,8 @@
 //home is the main screen of the app
 
 //scaffold is a widget which is used to design the app , it is related to one page which gives us header , body and footer
+
+//two kinds of buttons
+
+//1. raised
+//2. appers like a text
