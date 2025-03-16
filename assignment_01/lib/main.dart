@@ -74,7 +74,11 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
@@ -93,7 +97,10 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
@@ -112,7 +119,10 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
@@ -131,7 +141,10 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
@@ -150,7 +163,10 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
@@ -174,11 +190,11 @@ class MyApp extends StatelessWidget {
 
                 Container(
                   width: double.infinity,
-                  padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  padding: EdgeInsets.fromLTRB(40, 20, 40, 0),
                   child: Image.asset(
                     './assets/p6.jpeg',
-                    width: 20,
-                    height: 200,
+                    width: 10,
+                    height: 160,
                     fit:
                         BoxFit
                             .cover, // Ensures the image covers the entire width
@@ -193,103 +209,138 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                 ),
-
                 Container(
                   padding: EdgeInsets.all(10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      // First Card
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
                             Image.asset(
                               'assets/p1.jpeg',
                               width: 70,
-                              height: 90,
+                              height: 70,
                               fit: BoxFit.cover,
                             ),
-                            SizedBox(height: 5), // Space between image and text
+                            SizedBox(height: 5),
                             Text(
-                              "Pizza",
+                              "French Fry",
                               style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.star, color: Colors.amber, size: 14),
+                                SizedBox(width: 2),
+                                Text(
+                                  "4.8",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 3),
+                            Text(
+                              "\$109.99",
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ],
                         ),
                       ),
+
+                      // Second Card
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
                             Image.asset(
                               'assets/p2.jpeg',
                               width: 70,
-                              height: 90,
+                              height: 70,
                               fit: BoxFit.cover,
                             ),
                             SizedBox(height: 5),
                             Text(
-                              "Pizza",
+                              "Chees Burger",
                               style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.star, color: Colors.amber, size: 14),
+                                SizedBox(width: 2),
+                                Text(
+                                  "5.0",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 3),
+                            Text(
+                              "\$99.00",
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ],
                         ),
                       ),
+
+                      // Third Card
                       Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 242, 242),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
                         child: Column(
                           children: [
                             Image.asset(
                               'assets/p3.jpeg',
                               width: 70,
-                              height: 90,
+                              height: 70,
                               fit: BoxFit.cover,
                             ),
                             SizedBox(height: 5),
                             Text(
-                              "Pizza",
+                              "Chicken Fry",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
-                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              'assets/p4.jpeg',
-                              width: 70,
-                              height: 90,
-                              fit: BoxFit.cover,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.star, color: Colors.amber, size: 14),
+                                SizedBox(width: 2),
+                                Text(
+                                  "4.8",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              ],
                             ),
-                            SizedBox(height: 5),
+                            SizedBox(height: 3),
                             Text(
-                              "Pizza",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        color: const Color.fromARGB(255, 243, 242, 242),
-                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              'assets/p5.jpeg',
-                              width: 70,
-                              height: 90,
-                              fit: BoxFit.cover,
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              "Pizza",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              "\$89.99",
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ],
                         ),
