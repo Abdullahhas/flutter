@@ -26,50 +26,279 @@ class MyApp extends StatelessWidget {
             SizedBox(width: 10),
           ],
         ),
-        body: Center(
-          child: Column(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        style: TextStyle(color: Colors.black),
-                        decoration: InputDecoration(
-                          hintText: "Search your favourite food",
-                          hintStyle: TextStyle(color: Colors.black),
-                          prefixIcon: Icon(Icons.search),
-                          prefixIconColor: Colors.black,
-                          filled: true,
-                          fillColor: Colors.white,
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          style: TextStyle(color: Colors.black),
+                          decoration: InputDecoration(
+                            hintText: "Search your favourite food",
+                            hintStyle: TextStyle(color: Colors.black),
+                            prefixIcon: Icon(Icons.search),
+                            prefixIconColor: Colors.black,
+                            filled: true,
+                            fillColor: Colors.white,
 
-                          focusedBorder: border,
-                          enabledBorder: border,
+                            focusedBorder: border,
+                            enabledBorder: border,
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(width: 10),
-                    Container(
-                      color: Colors.black,
-                      child: Icon(Icons.menu, color: Colors.white),
-                    ),
-                  ],
+                      SizedBox(width: 10),
+                      Container(
+                        color: Colors.black,
+                        child: Icon(Icons.menu, color: Colors.white),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
 
-              Container(
-                alignment: Alignment.centerLeft,
-                padding:EdgeInsets.fromLTRB(15, 20, 0, 0),
-                child: Text(
-                  "Food Category",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18 ,
-                    ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: EdgeInsets.fromLTRB(15, 20, 0, 0),
+                  child: Text(
+                    "Food Category",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
                 ),
-              ),
-            ],
+
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p1.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5), // Space between image and text
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p2.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p3.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p4.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p5.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  child: Image.asset(
+                    './assets/p6.jpeg',
+                    width: 20,
+                    height: 200,
+                    fit:
+                        BoxFit
+                            .cover, // Ensures the image covers the entire width
+                  ),
+                ),
+
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: EdgeInsets.fromLTRB(15, 20, 0, 0),
+                  child: Text(
+                    "Food Menu",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                ),
+
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p1.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5), // Space between image and text
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p2.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p3.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p4.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: const Color.fromARGB(255, 243, 242, 242),
+                        padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/p5.jpeg',
+                              width: 70,
+                              height: 90,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "Pizza",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
