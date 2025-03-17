@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'burger.dart';
+import 'overview.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       home: Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.menu), // Menu icon on the left side
@@ -348,12 +351,42 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
-              ],
+                 Container(
+                  padding:EdgeInsets.fromLTRB(0, 0, 0, 0),
+                   child: Builder(
+  builder: (context) => Column(
+    children: [
+      ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Overview()),
+          );
+        },
+        child: Text('Go to Overview'),
+      ),
+      SizedBox(height: 10), // Add some space between buttons
+      ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Burger()),
+          );
+        },
+        child: Text('Go to Burger'),
+      ),
+    ],
+  ),
+)
+
+                 )
+                 ],
             ),
           ),
         ),
       ),
     );
+    
   }
-  
+
 }
