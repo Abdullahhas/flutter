@@ -25,8 +25,6 @@ class Overview extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-
-                    
                   ],
                 ),
               ),
@@ -51,46 +49,74 @@ class Overview extends StatelessWidget {
                         child: Row(
                           children: [
                             Icon(Icons.lock_clock),
-                  
+
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Delivery"),
-                                Text("25 min of preparation"),
+                                Text(
+                                  "Delivery",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Text(
+                                  "25 min of preparation",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
                               ],
                             ),
                           ],
                         ),
                       ),
-                  
+
                       Container(
-                        padding: EdgeInsets.fromLTRB(40, 30, 0, 0),
+                        padding: EdgeInsets.fromLTRB(0, 30, 10, 0),
                         child: Row(
                           children: [
-                            Icon(Icons.lock_clock),
-                  
+                            Icon(Icons.cloud),
+
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Delivery"),
-                                Text("25 min of preparation"),
+                                Text(
+                                  "Portion",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Text(
+                                  "for one person",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
                               ],
                             ),
                           ],
                         ),
                       ),
-                  
+
                       Container(
-                        padding: EdgeInsets.fromLTRB(40, 30, 0, 0),
+                        // color: Colors.amber,
+                        padding: EdgeInsets.fromLTRB(0, 30, 50, 0),
                         child: Row(
                           children: [
-                            Icon(Icons.lock_clock),
-                  
+                            Icon(Icons.price_check),
+
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Delivery"),
-                                Text("25 min of preparation"),
+                                Text(
+                                  "Price",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Text(
+                                  "Rs 99.00",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
                               ],
                             ),
                           ],
@@ -100,12 +126,9 @@ class Overview extends StatelessWidget {
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 50),
-                    child: Image.asset("./assets/p2.jpeg",
-                    width: 230,
-                    ))
+                    child: Image.asset("./assets/p2.jpeg", width: 230),
+                  ),
                 ],
-
-              
               ),
 
               Container(
@@ -125,12 +148,12 @@ class Overview extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
 
-                            padding: EdgeInsets.fromLTRB(3, 10, 3, 10),
+                            padding: EdgeInsets.fromLTRB(0, 10, 3, 10),
                             child: Column(
                               children: [
                                 Image.asset(
                                   'assets/p1.jpeg',
-                                  
+
                                   width: 50,
                                   height: 70,
                                   fit: BoxFit.cover,
@@ -177,7 +200,7 @@ class Overview extends StatelessWidget {
                               children: [
                                 Image.asset(
                                   'assets/p3.jpeg',
-                               width: 50,
+                                  width: 50,
                                   height: 70,
                                   fit: BoxFit.cover,
                                 ),
@@ -199,7 +222,7 @@ class Overview extends StatelessWidget {
                               children: [
                                 Image.asset(
                                   'assets/p4.jpeg',
-                                 width: 50,
+                                  width: 50,
                                   height: 70,
                                   fit: BoxFit.cover,
                                 ),
