@@ -6,12 +6,42 @@ void main() {
 
 class Burger extends StatelessWidget {
   final List<Map<String, dynamic>> items = [
-    {'name': 'Chees Burger', 'price': 99.00, 'image': 'assets/p1.jpeg', 'rating': 5.0},
-    {'name': 'Chees Burger', 'price': 79.00, 'image': 'assets/p1.jpeg', 'rating': 5.0},
-    {'name': 'Chees Burger', 'price': 129.00, 'image': 'assets/p1.jpeg', 'rating': 5.0},
-    {'name': 'Chees Burger', 'price': 89.00, 'image': 'assets/p1.jpeg', 'rating': 5.0},
-    {'name': 'Chees Burger', 'price': 99.00, 'image': 'assets/p1.jpeg', 'rating': 5.0},
-    {'name': 'Chees Burger', 'price': 79.00, 'image': 'assets/p1.jpeg', 'rating': 5.0},
+    {
+      'name': 'Chees Burger',
+      'price': 99.00,
+      'image': 'assets/p1.jpeg',
+      'rating': 5.0,
+    },
+    {
+      'name': 'Chees Burger',
+      'price': 79.00,
+      'image': 'assets/p1.jpeg',
+      'rating': 5.0,
+    },
+    {
+      'name': 'Chees Burger',
+      'price': 129.00,
+      'image': 'assets/p1.jpeg',
+      'rating': 5.0,
+    },
+    {
+      'name': 'Chees Burger',
+      'price': 89.00,
+      'image': 'assets/p1.jpeg',
+      'rating': 5.0,
+    },
+    {
+      'name': 'Chees Burger',
+      'price': 99.00,
+      'image': 'assets/p1.jpeg',
+      'rating': 5.0,
+    },
+    {
+      'name': 'Chees Burger',
+      'price': 79.00,
+      'image': 'assets/p1.jpeg',
+      'rating': 5.0,
+    },
   ];
 
   @override
@@ -54,18 +84,10 @@ class Burger extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // First column
-                Expanded(
-                  child: Column(
-                    children: column1,
-                  ),
-                ),
+                Expanded(child: Column(children: column1)),
                 SizedBox(width: 10), // Space between columns
                 // Second column
-                Expanded(
-                  child: Column(
-                    children: column2,
-                  ),
-                ),
+                Expanded(child: Column(children: column2)),
               ],
             ),
           ),
@@ -75,7 +97,12 @@ class Burger extends StatelessWidget {
   }
 
   // Card builder function
-  Widget _buildItemCard(String name, double price, String image, double rating) {
+  Widget _buildItemCard(
+    String name,
+    double price,
+    String image,
+    double rating,
+  ) {
     return Container(
       margin: EdgeInsets.only(bottom: 10),
       padding: EdgeInsets.all(10),
@@ -94,42 +121,22 @@ class Burger extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            image,
-            width: 70,
-            height: 70,
-            fit: BoxFit.cover,
-          ),
+          Image.asset(image, width: 70, height: 70, fit: BoxFit.cover),
           SizedBox(height: 5),
-          Text(
-            name,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          Text(name, style: TextStyle(fontWeight: FontWeight.bold)),
           SizedBox(height: 2),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.star,
-                color: Colors.amber,
-                size: 14,
-              ),
+              Icon(Icons.star, color: Colors.amber, size: 14),
               SizedBox(width: 2),
-              Text(
-                rating.toString(),
-                style: TextStyle(color: Colors.grey),
-              ),
+              Text(rating.toString(), style: TextStyle(color: Colors.grey)),
             ],
           ),
           SizedBox(height: 5),
           Text(
             "\$${price.toStringAsFixed(2)}",
-            style: TextStyle(
-              color: Colors.orange,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold),
           ),
         ],
       ),
