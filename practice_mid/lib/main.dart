@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Next.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,25 +15,45 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Flutter Container'
+            'practice'
             ),
         ),
-        body:  Center(
-          child: Container(
-            width: 100,
-            height: 100,
-            color: Colors.red,
-            child : Center(
-              child: Text(
-                'Hello World',
-                style: TextStyle(
-                  color: Colors.white,
+
+        body : Column(
+          children: [
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.red,
+              child: Center(
+                child: Text(
+                  'Hello World',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),
-          ),
-        )
-      ),
+
+            Builder(
+              builder: (context) {
+                return ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Next()),
+                    );
+                  },
+                  child: Text('Next'),
+                );
+              }
+            )
+            
+        
+          ],
+        ),
+       
+      )
      
     );
     
