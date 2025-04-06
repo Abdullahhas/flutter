@@ -33,7 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
   List<dynamic> data = [];
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     fetchApiData();
   }
@@ -74,4 +73,3 @@ class _MyHomePageState extends State<MyHomePage> {
 
   }
 
-  
